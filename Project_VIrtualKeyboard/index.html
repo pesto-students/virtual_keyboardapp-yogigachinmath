@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <textarea class="textArea" onChange = "handleChange(event)" readonly>
+        </textarea>
+    </div>
+    <button class="keyboard__key" style="background-color: cadetblue;" onclick="handleClick(event)"><i class="material-icons">keyboard</i></button>
+        <div class="keyboard keyboard--hidden">
+            <div class="keyboard_keys" onclick="handleKeyboardClick(event)">
+                <div class="keyboardrow">
+                    <button type="button" data-keyValue = "1" class="keyboard__key">1</button>
+                    <button type="button" data-keyValue = "2" class="keyboard__key">2</button>
+                    <button type="button" data-keyValue = "3" class="keyboard__key">3</button>
+                    <button type="button" data-keyValue = "4" class="keyboard__key">4</button>
+                    <button type="button" data-keyValue = "5" class="keyboard__key">5</button>
+                    <button type="button" data-keyValue = "6" class="keyboard__key">6</button>
+                    <button type="button" data-keyValue = "7" class="keyboard__key">7</button>
+                    <button type="button" data-keyValue = "8" class="keyboard__key">8</button>
+                    <button type="button" data-keyValue = "9" class="keyboard__key">9</button>
+                    <button type="button" data-keyValue = "0" class="keyboard__key">0</button>
+                    <button type="button" data-keyValue = "bksp" class="keyboard__key"><i class="material-icons">backspace</i></button>
+                </div>
+                <div class="keyboardrow">
+                    <button type="button" data-keyValue = "q" class="keyboard__key">q</button>
+                    <button type="button" data-keyValue = "w" class="keyboard__key">w</button>
+                    <button type="button" data-keyValue = "e" class="keyboard__key">e</button>
+                    <button type="button" data-keyValue = "r" class="keyboard__key">r</button>
+                    <button type="button" data-keyValue = "t" class="keyboard__key">t</button>
+                    <button type="button" data-keyValue = "y" class="keyboard__key">y</button>
+                    <button type="button" data-keyValue = "u" class="keyboard__key">u</button>
+                    <button type="button" data-keyValue = "i" class="keyboard__key">i</button>
+                    <button type="button" data-keyValue = "o" class="keyboard__key">o</button>
+                    <button type="button" data-keyValue = "p" class="keyboard__key">p</button>
+                </div>
+                <div class="keyboardrow">
+                    <button type="button" data-keyValue = "CP" class="keyboard__key"><i class="material-icons">keyboard_capslock</i></button>
+                    <button type="button" data-keyValue = "a" class="keyboard__key">a</button>
+                    <button type="button" data-keyValue = "s" class="keyboard__key">s</button>
+                    <button type="button" data-keyValue = "d" class="keyboard__key">d</button>
+                    <button type="button" data-keyValue = "f" class="keyboard__key">f</button>
+                    <button type="button" data-keyValue = "g" class="keyboard__key">g</button>
+                    <button type="button" data-keyValue = "h" class="keyboard__key">h</button>
+                    <button type="button" data-keyValue = "j" class="keyboard__key">j</button>
+                    <button type="button" data-keyValue = "k" class="keyboard__key">k</button>
+                    <button type="button" data-keyValue = "l" class="keyboard__key">l</button>
+                    <button type="button" data-keyValue = "enter" class="keyboard__key"><i class="material-icons">keyboard_return</i></button>
+                </div>
+
+                <div class="keyboardrow">
+                    <button type="button" data-keyValue = "z" class="keyboard__key">z</button>
+                    <button type="button" data-keyValue = "x" class="keyboard__key">x</button>
+                    <button type="button" data-keyValue = "c" class="keyboard__key">c</button>
+                    <button type="button" data-keyValue = "v" class="keyboard__key">v</button>
+                    <button type="button" data-keyValue = "b" class="keyboard__key">b</button>
+                    <button type="button" data-keyValue = "n" class="keyboard__key">n</button>
+                    <button type="button" data-keyValue = "m" class="keyboard__key">m</button>
+                </div>
+                <div class="keyboardrow">
+                    <button type="button" data-keyValue = "space" class="keyboard__key keyboard__key--extra-wide ">Space</button>
+                </div>
+            </div>
+        </div>
+    <script src="./src/index.js"></script>    
+</body>
+
+</html>
